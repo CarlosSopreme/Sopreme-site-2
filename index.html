@@ -716,6 +716,13 @@
     .quality-layout{ grid-template-columns:1fr; gap:40px;}
     .quality-list{ grid-template-columns:1fr;}
   }
+  @media (max-width:720px){
+    .quality-visual{ grid-template-columns:1fr; gap:16px; }
+    .quality-visual .col:nth-child(2){ margin-top:0; }
+    .quality-visual img, .quality-visual .tile{ aspect-ratio:auto; }
+    .quality-visual img{ width:100%; height:auto; }
+    .quality-visual .tile{ padding:24px; min-height:200px; }
+  }
 
   /* ------- Offer ------- */
   .offer{
@@ -1212,9 +1219,12 @@
   @media (max-width:720px){
     section{ padding:60px 0; }
     .section-head{ margin:0 auto 40px; }
+    h1{ font-size:2.4rem; }
+    h2{ font-size:1.9rem; word-break:break-word; }
     .section-head h2{ font-size:2rem; }
     .section-head p{ font-size:1rem; }
     .container{ padding:0 20px; }
+    html, body{ overflow-x:hidden; }
 
     .reviews-head{
       justify-content:center;
