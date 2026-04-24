@@ -430,6 +430,7 @@
     font-family:'Archivo', sans-serif;
     font-size:1.35rem;
     font-weight:900;
+    line-height:1;
     text-transform:uppercase;
     letter-spacing:-.01em;
   }
@@ -1869,6 +1870,10 @@
       p.classList.add('active');
     });
   });
+
+  // Always start at top on load
+  if (history.scrollRestoration) history.scrollRestoration = 'manual';
+  window.scrollTo(0, 0);
 </script>
 
 </body>
