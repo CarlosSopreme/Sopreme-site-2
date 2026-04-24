@@ -420,13 +420,13 @@
   }
   .marquee{
     display:flex;
+    align-items:center;
     gap:70px;
     white-space:nowrap;
     animation:scroll 38s linear infinite;
     width:max-content;
   }
   .marquee-item{
-    display:flex; align-items:center; gap:18px;
     font-family:'Archivo', sans-serif;
     font-size:1.35rem;
     font-weight:900;
@@ -434,8 +434,7 @@
     text-transform:uppercase;
     letter-spacing:-.01em;
   }
-  .marquee-item .dot{
-    display:block;
+  .marquee .dot{
     width:12px; height:12px;
     background:var(--pink);
     border-radius:50%;
@@ -1282,18 +1281,18 @@
 <!-- Trust marquee -->
 <div class="trust-strip">
   <div class="marquee">
-    <div class="marquee-item">100% Pure <span class="dot"></span></div>
-    <div class="marquee-item">Kosher <span class="dot"></span></div>
-    <div class="marquee-item">Non-GMO <span class="dot"></span></div>
-    <div class="marquee-item">Unfiltered &amp; Cold-Filled <span class="dot"></span></div>
-    <div class="marquee-item">Certified Low Glycemic <span class="dot"></span></div>
-    <div class="marquee-item">No Added Sugar <span class="dot"></span></div>
-    <div class="marquee-item">100% Pure <span class="dot"></span></div>
-    <div class="marquee-item">Halal <span class="dot"></span></div>
-    <div class="marquee-item">Non-GMO <span class="dot"></span></div>
-    <div class="marquee-item">Unfiltered &amp; Cold-Filled <span class="dot"></span></div>
-    <div class="marquee-item">Certified Low Glycemic <span class="dot"></span></div>
-    <div class="marquee-item">No Added Sugar <span class="dot"></span></div>
+    <span class="marquee-item">100% Pure</span><span class="dot"></span>
+    <span class="marquee-item">Kosher</span><span class="dot"></span>
+    <span class="marquee-item">Non-GMO</span><span class="dot"></span>
+    <span class="marquee-item">Unfiltered &amp; Cold-Filled</span><span class="dot"></span>
+    <span class="marquee-item">Certified Low Glycemic</span><span class="dot"></span>
+    <span class="marquee-item">No Added Sugar</span><span class="dot"></span>
+    <span class="marquee-item">100% Pure</span><span class="dot"></span>
+    <span class="marquee-item">Halal</span><span class="dot"></span>
+    <span class="marquee-item">Non-GMO</span><span class="dot"></span>
+    <span class="marquee-item">Unfiltered &amp; Cold-Filled</span><span class="dot"></span>
+    <span class="marquee-item">Certified Low Glycemic</span><span class="dot"></span>
+    <span class="marquee-item">No Added Sugar</span><span class="dot"></span>
   </div>
 </div>
 
